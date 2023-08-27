@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="profile">
+        <img id="profile-pic" src="./th.jpeg" alt="jpeg">
+
+      <div class="center">
+        <div class="signup-box">
+          <h2>INZAMAM MALIK PASSWORD</h2>
+          <input type="old password" placeholder="old password">
+          <input type="New password" placeholder="New password">
+          <input type=" Repeat Password" placeholder=" Repeat Password">
+          <button id="signup-btn">update Password</button>
+        </div>
+      </div>
+      
+
+
+
+
+      <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.profile {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+.signup-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.signup-box h2 {
+  margin-bottom: 10px;
+}
+
+.signup-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const signupButton = document.getElementById('signup-btn');
+  
+  signupButton.addEventListener('click', function () {
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (username === '' || email === '' || password === '') {
+      alert('Please fill in all fields.');
+      return;
+    }
+    console.log('Oldpassword:', Oldpassword);
+    console.log('Password:', Password);
+    console.log('RepeatPassword:', Repeatpassword);
+
+  });
+});
+</script>
+
+<p>Already have an account? <a href="./app.html">app.html</a></p>
+
+</body>
+</html>
